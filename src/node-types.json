@@ -109,19 +109,27 @@
     }
   },
   {
-    "type": ",",
+    "type": "\u0001",
     "named": false
   },
   {
-    "type": ":",
+    "type": "\u0002",
     "named": false
   },
   {
-    "type": "[",
+    "type": "\u0003",
     "named": false
   },
   {
-    "type": "]",
+    "type": "\u0004",
+    "named": false
+  },
+  {
+    "type": "\u0005",
+    "named": false
+  },
+  {
+    "type": "\u0006",
     "named": false
   },
   {
@@ -143,13 +151,5 @@
   {
     "type": "true",
     "named": true
-  },
-  {
-    "type": "{",
-    "named": false
-  },
-  {
-    "type": "}",
-    "named": false
   }
 ]

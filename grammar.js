@@ -19,34 +19,34 @@ module.exports = grammar({
     ),
 
     object: $ => seq(
-      "{", commaSep($.pair), "}"
+      "\1", commaSep($.pair), "\3"
     ),
 
     pair: $ => seq(
       field("key", choice($.string, $.number)),
-      ":",
+      "\4",
       field("value", $._value)
     ),
 
     array: $ => seq(
-      "[", commaSep($._value), "]"
+      "\5", commaSep($._value), "\6"
     ),
 
-    string: $ => "\"",
+    string: $ => "\7",
 
-    number: $ => "0",
+    number: $ => "\10",
 
-    true: $ => "t",
+    true: $ => "\11",
 
-    false: $ => "f",
+    false: $ => "\12",
 
-    null: $ => "n",
+    null: $ => "\13",
   },
   extras: $ => []
 });
 
 function commaSep1 (rule) {
-  return seq(rule, repeat(seq(",", rule)))
+  return seq(rule, repeat(seq("\2", rule)))
 }
 
 function commaSep (rule) {

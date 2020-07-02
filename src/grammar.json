@@ -43,7 +43,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "{"
+          "value": "\u0001"
         },
         {
           "type": "CHOICE",
@@ -62,7 +62,7 @@
                     "members": [
                       {
                         "type": "STRING",
-                        "value": ","
+                        "value": "\u0002"
                       },
                       {
                         "type": "SYMBOL",
@@ -80,7 +80,7 @@
         },
         {
           "type": "STRING",
-          "value": "}"
+          "value": "\u0003"
         }
       ]
     },
@@ -106,7 +106,7 @@
         },
         {
           "type": "STRING",
-          "value": ":"
+          "value": "\u0004"
         },
         {
           "type": "FIELD",
@@ -123,7 +123,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "["
+          "value": "\u0005"
         },
         {
           "type": "CHOICE",
@@ -142,7 +142,7 @@
                     "members": [
                       {
                         "type": "STRING",
-                        "value": ","
+                        "value": "\u0002"
                       },
                       {
                         "type": "SYMBOL",
@@ -160,29 +160,29 @@
         },
         {
           "type": "STRING",
-          "value": "]"
+          "value": "\u0006"
         }
       ]
     },
     "string": {
       "type": "STRING",
-      "value": "\""
+      "value": "\u0007"
     },
     "number": {
       "type": "STRING",
-      "value": "0"
+      "value": "\b"
     },
     "true": {
       "type": "STRING",
-      "value": "t"
+      "value": "\t"
     },
     "false": {
       "type": "STRING",
-      "value": "f"
+      "value": "\n"
     },
     "null": {
       "type": "STRING",
-      "value": "n"
+      "value": "\u000b"
     }
   },
   "extras": [],
