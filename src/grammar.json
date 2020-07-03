@@ -183,6 +183,10 @@
     "null": {
       "type": "STRING",
       "value": "\u000b"
+    },
+    "error": {
+      "type": "STRING",
+      "value": "\f"
     }
   },
   "extras": [],

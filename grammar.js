@@ -41,6 +41,8 @@ module.exports = grammar({
     false: $ => "\12",
 
     null: $ => "\13",
+
+    error: $ => "\14",
   },
   extras: $ => []
 });
